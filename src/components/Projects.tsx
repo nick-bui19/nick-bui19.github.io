@@ -3,13 +3,13 @@ import './Projects.css';
 
 const projects = [
   {
-    image: 'https://via.placeholder.com/300x200.png/242424/fff?text=Real-Time+Analytics',
+    image: '/traffic-data-project.png',
     title: 'Real-Time Sensor Analytics',
     description: 'A real-time traffic and environmental sensor analytics platform using Kafka, PySpark, and Streamlit.',
     link: 'https://github.com/nick-bui19/real-time-sensor-analytics',
   },
   {
-    image: 'https://via.placeholder.com/300x200.png/242424/fff?text=LDR+Hub',
+    image: '/ldr-project.png',
     title: 'Long-Distance Relationship Hub',
     description: 'A React single-page application built to help partners maintain closeness while apart. Features include dual time zone clocks, Word of the Day, and a photo gallery.',
     link: 'https://github.com/nick-bui19/brown',

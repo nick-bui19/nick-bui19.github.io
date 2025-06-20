@@ -60,25 +60,25 @@ const resumeData = {
   certifications: [
     {
       name: 'Machine Learning Specialization',
-      issuer: 'Coursera',
+      issuer: 'Stanford | Coursera',
       date: 'Issued Jun 2023',
       credentialId: 'D8YHKEYMQNX4'
     },
     {
       name: 'Unsupervised Learning, Recommenders, Reinforcement Learning',
-      issuer: 'Coursera',
+      issuer: 'Stanford | Coursera',
       date: 'Issued Jun 2023',
       credentialId: '4C2F9DQ6P5EQ'
     },
     {
         name: 'Advanced Learning Algorithms',
-        issuer: 'Coursera',
+        issuer: 'Stanford | Coursera',
         date: 'Issued May 2023',
         credentialId: 'LVEH4JFDN3R'
     },
     {
         name: 'Supervised Machine Learning: Regression and Classification',
-        issuer: 'Coursera',
+        issuer: 'Stanford | Coursera',
         date: 'Issued May 2023',
         credentialId: 'BVDXAHJUY7EN'
     }
