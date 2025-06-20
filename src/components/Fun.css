@@ -1,0 +1,37 @@
+.fun-container {
+  padding: 50px 24px;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.fun-title {
+  font-size: 2rem;
+  color: #242424;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.fun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fun-image-wrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fun-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.fun-image:hover {
+  transform: scale(1.05);
+} 

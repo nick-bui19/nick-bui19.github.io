@@ -1,0 +1,67 @@
+.navbar {
+  background-color: #00693e; /* Dartmouth Pine Green */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+.navbar-logo {
+  color: #fff;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.navbar-link:hover {
+  color: #e0e0e0;
+}
+
+.navbar-socials {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: #e0e0e0;
+}

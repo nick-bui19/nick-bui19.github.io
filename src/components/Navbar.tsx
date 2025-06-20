@@ -1,0 +1,34 @@
+import React from 'react';
+import './Navbar.css';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+
+const Navbar: React.FC = () => {
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a href="/" className="navbar-logo">
+          Nick Bui's Portfolio
+        </a>
+        <div className="navbar-links">
+          <a href="#about" className="navbar-link">About</a>
+          <a href="#projects" className="navbar-link">Projects</a>
+          <a href="#resume" className="navbar-link">Resume</a>
+          <a href="#fun" className="navbar-link">Fun</a>
+        </div>
+        <div className="navbar-socials">
+          <a href="https://www.linkedin.com/in/nick-bui19/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/nick-bui19" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/nickbui19/" target="_blank" rel="noopener noreferrer" className="social-icon">
+            <FaInstagram />
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar; 
