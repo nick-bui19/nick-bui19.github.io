@@ -80,4 +80,79 @@
 .resume-item li {
   margin-bottom: 8px;
   line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .resume-content {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 900px) {
+  .resume-content {
+    max-width: 800px;
+  }
+  .resume-section-title {
+    font-size: 1.7rem;
+  }
+  .resume-item-header h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 32px 8px;
+  }
+  .resume-content {
+    max-width: 100%;
+    padding: 0 4px;
+  }
+  .resume-section-title {
+    font-size: 1.3rem;
+    padding-bottom: 4px;
+  }
+  .resume-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .resume-item-header h3 {
+    font-size: 1rem;
+  }
+  .resume-item-header span {
+    font-size: 0.95rem;
+  }
+  .resume-item p, .resume-item li {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  .resume-container {
+    padding: 18px 2px;
+  }
+  .resume-section-title {
+    font-size: 1.1rem;
+  }
+  .resume-item-header h3 {
+    font-size: 0.95rem;
+  }
+  .resume-item-header span {
+    font-size: 0.85rem;
+  }
+  .resume-item p, .resume-item li {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .resume-section-title {
+    font-size: 1rem;
+  }
+  .resume-item-header h3 {
+    font-size: 0.85rem;
+  }
+  .resume-item-header span {
+    font-size: 0.75rem;
+  }
+  .resume-item p, .resume-item li {
+    font-size: 0.85rem;
+  }
 } 

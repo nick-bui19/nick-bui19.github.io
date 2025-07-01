@@ -65,3 +65,78 @@
 .social-icon:hover {
   color: #e0e0e0;
 }
+
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 0 12px;
+  }
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
+    margin-left: 16px;
+    z-index: 1001;
+  }
+  .navbar-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100vw;
+    background: #00693e;
+    z-index: 1000;
+    padding: 24px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .navbar-mobile-menu .navbar-link {
+    padding: 16px 0;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .navbar-socials {
+    justify-content: center;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 60px;
+  }
+  .navbar-container {
+    height: 60px;
+  }
+  .navbar-logo {
+    font-size: 1rem;
+  }
+  .navbar-hamburger {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    font-size: 0.9rem;
+  }
+  .navbar-mobile-menu .navbar-link {
+    font-size: 1.1rem;
+  }
+}
+
+/* Hide hamburger by default */
+.navbar-hamburger {
+  display: none;
+}

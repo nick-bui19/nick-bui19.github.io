@@ -19,7 +19,7 @@ const resumeData = {
     {
       company: 'TransAstra',
       role: 'Software Engineer Intern',
-      date: 'May 2025 - August 2025',
+      date: 'June 2025 - August 2025',
       location: 'Los Angeles, CA',
       duties: [
         'Automated cross-platform CI with Docker & GitLab-CI, shrinking Windows/Linux/macOS regressions from 5h to 20min, enabling one-click builds.',
