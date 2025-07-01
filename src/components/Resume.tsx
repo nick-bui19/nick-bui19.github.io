@@ -59,6 +59,17 @@ const resumeData = {
   ],
   certifications: [
     {
+      name: 'AWS Solutions Architect - Associate',
+      issuer: 'Amazon Web Services (AWS)',
+      date: 'In Progress'
+    },
+    {
+      name: 'AWS Certified Cloud Practitioner',
+      issuer: 'Amazon Web Services (AWS)',
+      date: 'Issued Jul 2025',
+      credentialId: ''
+    },
+    {
       name: 'Machine Learning Specialization',
       issuer: 'Stanford | Coursera',
       date: 'Issued Jun 2023',
