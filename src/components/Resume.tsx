@@ -29,9 +29,9 @@ const resumeData = {
       date: 'May 2024 - August 2024',
       location: 'Cape Town, South Africa',
       duties: [
-        'Engineered user authentication, driver-rider matching, and real-time ride-tracking features in React Native & Node.js, cutting average booking time by 35s.',
-        'Integrated Paystack with a ledger micro-service that processed N4M ($2.6K) in secure in-app transactions with 0 payment failures during internship.',
-        'Designed and built scalable backend endpoints in NodeJS for ride scheduling, transaction history, user account management.'
+        'Engineered driver–rider matching & real-time ride-tracking in React Native & Node.js, cutting avg booking time by 35s.',
+        'Integrated Paystack with a ledger micro-service that processed $2.6K in secure in-app transactions.',
+        'Implemented scalable backend endpoints in NodeJS for ride scheduling, transaction history, and account management.'
       ]
     },
     {
@@ -40,9 +40,9 @@ const resumeData = {
       date: 'May 2023 - August 2023',
       location: 'Nashville, TN',
       duties: [
-        'Built multi-modal TensorFlow models to assess patient mental states from intake responses, incorporating NLP and behavioral signals.',
-        'Packaged the model inside a Dockerised FastAPI micro-service and deployed to AWS Fargate (ECS) behind an ALB, delivering ¡200ms p99 latency while serving 300+ mental-health assessments/week for 20 psychiatrists.',
-        'Implemented SHAP explainability dashboards visualising top-influencing symptoms & lab results; clinician feedback on these insights cut false positives 18 % after two refinement cycles.'
+        'Built TensorFlow ensemble learning models to assess patient mental states from intake responses & behavioral signals.',
+        'Prototype full-stack mobile application that provides psychiatrists at Vanderbilt University Medical Center with real-time patient feedback, containerized with Docker Compose.',
+        'Designed and implemented a secure sign-up page and email verification with AWS Amplify.'
       ]
     },
     {
@@ -51,9 +51,9 @@ const resumeData = {
         date: 'January 2023 - May 2024',
         location: 'Nashville, TN',
         duties: [
-          'Developed an algorithm for email malware detection, achieving a 95% detection rate in preliminary tests using ensemble learning and XGBoost and utilized by 10+ Vanderbilt students.',
-          'Spearheaded a project focused on the application of deep learning and AI in software testing, optimizing the identification of bugs and vulnerabilities by 30 %, which significantly accelerated the software development life cycle.',
-          'Annotated and labeled 5k+ data points for classification of cybersecurity messages and published dataset to enable transfer-learning research.'
+          'Developed ensemble learning email malware detection algorithm with 95 % detection rate in preliminary testing.',
+          'Spearheaded project on the application of AI in software testing, optimizing the identification of bugs and vulnerabilities by 30 %, utilized by 10+ Vanderbilt students.',
+          'Annotated 5K+ data points for cybersecurity message classification and published dataset.'
         ]
       }
   ],
