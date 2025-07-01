@@ -21,7 +21,12 @@ const resumeData = {
       role: 'Software Engineer Intern',
       date: 'May 2025 - August 2025',
       location: 'Los Angeles, CA',
-      duties: ["Currently working this role."]
+      duties: [
+        'Automated cross-platform CI with Docker & GitLab-CI, shrinking Windows/Linux/macOS regressions from 5h to 20min, enabling one-click builds.',
+        'Built a Rust smart-updater that fetches semver patches and verifies checksums, cutting upgrade-failure tickets by 40%.',
+        'Designed a React + Redux fleet dashboard that orchestrates multiple company’s data acquisition boards over WebSockets, saving operators 3 h/week.',
+        'Instrumented end-to-end Playwright tests achieving 80% coverage and catching 17 critical bugs pre-release.'
+      ]
     },
     {
       company: 'Karpool',
