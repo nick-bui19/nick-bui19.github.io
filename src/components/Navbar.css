@@ -79,12 +79,16 @@
   .navbar-links {
     display: none;
   }
+  .navbar-socials {
+    display: none;
+  }
   .navbar-hamburger {
     display: block;
     cursor: pointer;
     font-size: 2rem;
     color: #fff;
     margin-left: 16px;
+    margin-right: 8px;
     z-index: 1001;
   }
   .navbar-mobile-menu {
@@ -106,7 +110,8 @@
     text-align: center;
     border-bottom: 1px solid #e0e0e0;
   }
-  .navbar-socials {
+  .navbar-mobile-menu .navbar-socials {
+    display: flex;
     justify-content: center;
     margin-top: 16px;
   }
