@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Fun.css';
 
 const squashImages = [
@@ -23,7 +23,29 @@ const filmImagesRow2 = [
     { src: '/film-17-horizontal.png', alt: 'Film photograph 17' },
 ];
 
+// Preload images function
+const preloadImages = (imageArray: Array<{src: string; alt: string}>) => {
+  imageArray.forEach((imageObj) => {
+    const img = new Image();
+    img.src = imageObj.src;
+  });
+};
+
 const Fun: React.FC = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    // Preload all images when component mounts
+    const allImages = [...squashImages, ...filmImagesRow1, ...filmImagesRow2];
+    preloadImages(allImages);
+    
+    // Set a timeout to show images after preloading
+    const timer = setTimeout(() => {
+      setImagesLoaded(true);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section className="fun-container" id="fun">
       <h2 className="fun-title">Fun Stuff</h2>
@@ -55,14 +77,32 @@ const Fun: React.FC = () => {
       </div>
 
       <div className="scrolling-gallery">
-        <div className="scrolling-row row1">
+        {!imagesLoaded && (
+          <div className="loading-container">
+            <div className="loading-spinner"></div>
+            <p>Loading photography gallery...</p>
+          </div>
+        )}
+        <div className={`scrolling-row row1 ${imagesLoaded ? 'loaded' : 'loading'}`}>
           {filmImagesRow1.concat(filmImagesRow1).map((image, index) => (
-            <img src={image.src} alt={image.alt} key={index} className="gallery-image" />
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              key={index} 
+              className="gallery-image"
+              loading="eager"
+            />
           ))}
         </div>
-        <div className="scrolling-row row2">
+        <div className={`scrolling-row row2 ${imagesLoaded ? 'loaded' : 'loading'}`}>
           {filmImagesRow2.concat(filmImagesRow2).map((image, index) => (
-            <img src={image.src} alt={image.alt} key={index} className="gallery-image" />
+            <img 
+              src={image.src} 
+              alt={image.alt} 
+              key={index} 
+              className="gallery-image"
+              loading="eager"
+            />
           ))}
         </div>
       </div>
