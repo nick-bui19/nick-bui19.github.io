@@ -9,11 +9,17 @@ const projects = [
     link: 'https://github.com/nick-bui19/real-time-sensor-analytics',
   },
   {
-    image: '/ldr-project.png',
-    title: 'Long-Distance Relationship Hub',
-    description: 'A React single-page application built to help partners maintain closeness while apart. Features include dual time zone clocks, Word of the Day, and a photo gallery.',
-    link: 'https://github.com/nick-bui19/brown',
+    image: '/mcdonalds.png',
+    title: 'McDonald\'s Survey Solver',
+    description: 'A Next.js web application that automates McDonald\'s customer satisfaction surveys using Playwright browser automation. Features real-time progress tracking and validation code extraction.',
+    link: 'https://mcdonalds-survey-solver.vercel.app',
   },
+  // {
+  //   image: '/ldr-project.png',
+  //   title: 'Long-Distance Relationship Hub',
+  //   description: 'A React single-page application built to help partners maintain closeness while apart. Features include dual time zone clocks, Word of the Day, and a photo gallery.',
+  //   link: 'https://github.com/nick-bui19/brown',
+  // },
 ];
 
 const Projects: React.FC = () => {
