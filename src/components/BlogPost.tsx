@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import './BlogPost.css';
 
@@ -15,8 +15,8 @@ interface BlogPostData {
 const blogPosts: Record<string, BlogPostData> = {
   'mcdonalds-survey-solver': {
     id: 'mcdonalds-survey-solver',
-    title: 'When I Tried to Automate McDonald\'s Surveys (And Why It Spectacularly Failed)',
-    description: 'A tale of ambitious automation, modern web security, and learning when to pivot',
+    title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed :||)',
+    description: 'Ambitious automation, modern web security, and learning when to pivot',
     date: 'July 18, 2025',
     readTime: '5 min read',
     heroImage: '/mcdonalds.png',
@@ -105,6 +105,11 @@ const blogPosts: Record<string, BlogPostData> = {
 
 const BlogPost: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
+
+  // Scroll to top when component mounts or slug changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
   
   if (!slug || !blogPosts[slug]) {
     return (
