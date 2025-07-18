@@ -9,7 +9,7 @@ interface BlogPostData {
   date: string;
   readTime: string;
   heroImage: string;
-  content: JSX.Element;
+  content: React.ReactElement;
 }
 
 const blogPosts: Record<string, BlogPostData> = {
