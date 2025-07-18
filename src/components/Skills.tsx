@@ -4,55 +4,39 @@ import {
   SiTypescript, 
   SiPython, 
   SiOpenjdk, 
-  SiCplusplus,
-  SiC,
   SiReact, 
   SiNodedotjs, 
   SiNextdotjs,
   SiExpress,
-  SiFlask,
-  SiSpring,
   SiDocker, 
-  SiKubernetes,
   SiAmazon, 
-  SiGooglecloud,
   SiMongodb, 
-  SiPostgresql,
-  SiMysql,
-  SiRedis,
-  SiGit, 
-  SiLinux,
-  SiPostman,
-  SiFigma,
-  SiTensorflow,
-  SiPytorch,
-  SiScikitlearn
+  SiPostgresql
 } from 'react-icons/si';
-import { FaCode } from 'react-icons/fa';
 import './Skills.css';
 
 interface Skill {
   name: string;
   icon: React.ComponentType<{ className?: string }>;
   url: string;
+  level: number;
+  category: string;
 }
 
 const Skills: React.FC = () => {
   const skills: Skill[] = [
-    { name: "JavaScript", icon: SiJavascript, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
-    { name: "TypeScript", icon: SiTypescript, url: "https://www.typescriptlang.org/" },
-    { name: "Python", icon: SiPython, url: "https://www.python.org/" },
-    { name: "Java", icon: SiOpenjdk, url: "https://openjdk.org/" },
-    { name: "React", icon: SiReact, url: "https://react.dev/" },
-    { name: "Node.js", icon: SiNodedotjs, url: "https://nodejs.org/" },
-    { name: "Next.js", icon: SiNextdotjs, url: "https://nextjs.org/" },
-    { name: "Express.js", icon: SiExpress, url: "https://expressjs.com/" },
-    { name: "AWS", icon: SiAmazon, url: "https://aws.amazon.com/" },
-    { name: "Docker", icon: SiDocker, url: "https://www.docker.com/" },
-    { name: "MongoDB", icon: SiMongodb, url: "https://www.mongodb.com/" },
-    { name: "PostgreSQL", icon: SiPostgresql, url: "https://www.postgresql.org/" },
-    { name: "TensorFlow", icon: SiTensorflow, url: "https://www.tensorflow.org/" },
-    { name: "PyTorch", icon: SiPytorch, url: "https://pytorch.org/" },
+    { name: "JavaScript", icon: SiJavascript, url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", level: 90, category: "languages" },
+    { name: "TypeScript", icon: SiTypescript, url: "https://www.typescriptlang.org/", level: 85, category: "languages" },
+    { name: "Python", icon: SiPython, url: "https://www.python.org/", level: 95, category: "languages" },
+    { name: "Java", icon: SiOpenjdk, url: "https://openjdk.org/", level: 80, category: "languages" },
+    { name: "React", icon: SiReact, url: "https://react.dev/", level: 90, category: "frontend" },
+    { name: "Node.js", icon: SiNodedotjs, url: "https://nodejs.org/", level: 85, category: "backend" },
+    { name: "Next.js", icon: SiNextdotjs, url: "https://nextjs.org/", level: 80, category: "frontend" },
+    { name: "Express.js", icon: SiExpress, url: "https://expressjs.com/", level: 85, category: "backend" },
+    { name: "AWS", icon: SiAmazon, url: "https://aws.amazon.com/", level: 80, category: "cloud" },
+    { name: "Docker", icon: SiDocker, url: "https://www.docker.com/", level: 85, category: "cloud" },
+    { name: "MongoDB", icon: SiMongodb, url: "https://www.mongodb.com/", level: 85, category: "database" },
+    { name: "PostgreSQL", icon: SiPostgresql, url: "https://www.postgresql.org/", level: 80, category: "database" },
   ];
 
 
@@ -62,21 +46,30 @@ const Skills: React.FC = () => {
       
       <div className="skills-description">
         <p>
-          Technologies and frameworks I work with. Click on any icon to learn more.
+          Technologies and frameworks I work with. Click on any skill to learn more.
         </p>
       </div>
 
-      <div className="skills-icons">
+      <div className="skills-grid">
         {skills.map((skill, index) => (
           <a
             key={index}
             href={skill.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="skill-icon-link"
-            title={skill.name}
+            className="skill-card"
+            title={`Learn more about ${skill.name}`}
           >
-            <skill.icon className="skill-icon" />
+            <div className="skill-header">
+              <skill.icon className="skill-icon" />
+              <span className="skill-name">{skill.name}</span>
+            </div>
+            <div className="skill-bar">
+              <div 
+                className="skill-progress" 
+                style={{ width: `${skill.level}%` }}
+              />
+            </div>
           </a>
         ))}
       </div>
