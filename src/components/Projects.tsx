@@ -11,7 +11,7 @@ const projects = [
   {
     image: '/mcdonalds.png',
     title: 'McDonald\'s Survey Solver',
-    description: 'A Next.js web application that automates McDonald\'s customer satisfaction surveys using Playwright browser automation. Features real-time progress tracking and validation code extraction.',
+    description: 'INACTIVE: A Next.js web application that automates McDonald\'s customer satisfaction surveys using Playwright browser automation. Built with TypeScript, deployed on Vercel and Railway with container-based architecture. Features sophisticated anti-detection measures and dual deployment strategies.',
     link: 'https://mcdonalds-survey-solver.vercel.app',
   },
   // {
@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
               <h3 className="project-card-title">{project.title}</h3>
               <p className="project-card-description">{project.description}</p>
               <a href={project.link} className="project-card-button">
-                Read More &rarr;
+                See Demo &rarr;
               </a>
             </div>
           </div>

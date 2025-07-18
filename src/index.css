@@ -12,3 +12,27 @@ body {
   margin: 0;
   background-color: #f0f2f5;
 }
+
+/* Fix scroll position for sticky navbar */
+.about-container,
+.skills-container,
+.projects-container,
+.blog-container,
+.resume-container,
+.fun-container,
+.contact-container {
+  scroll-margin-top: 80px;
+}
+
+/* Adjust scroll margin for mobile navbar height */
+@media (max-width: 600px) {
+  .about-container,
+  .skills-container,
+  .projects-container,
+  .blog-container,
+  .resume-container,
+  .fun-container,
+  .contact-container {
+    scroll-margin-top: 60px;
+  }
+}

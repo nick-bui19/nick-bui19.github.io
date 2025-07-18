@@ -1,27 +1,18 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Skills from './components/Skills'
-import Projects from './components/Projects'
-import Resume from './components/Resume'
-import Fun from './components/Fun'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Portfolio from './components/Portfolio'
+import BlogPost from './components/BlogPost'
 
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Resume />
-      <Fun />
-      <Contact />
-      <Footer />
-    </>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+      </Routes>
+    </Router>
   )
 }
 

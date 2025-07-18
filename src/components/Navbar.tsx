@@ -18,6 +18,7 @@ const Navbar: React.FC = () => {
           <a href="#about" className="navbar-link">About</a>
           <a href="#skills" className="navbar-link">Skills</a>
           <a href="#projects" className="navbar-link">Projects</a>
+          <a href="#blog" className="navbar-link">Blog</a>
           <a href="#resume" className="navbar-link">Resume</a>
           <a href="#fun" className="navbar-link">Fun</a>
           <a href="#contact" className="navbar-link">Contact</a>
@@ -42,6 +43,7 @@ const Navbar: React.FC = () => {
           <a href="#about" className="navbar-link" onClick={handleLinkClick}>About</a>
           <a href="#skills" className="navbar-link" onClick={handleLinkClick}>Skills</a>
           <a href="#projects" className="navbar-link" onClick={handleLinkClick}>Projects</a>
+          <a href="#blog" className="navbar-link" onClick={handleLinkClick}>Blog</a>
           <a href="#resume" className="navbar-link" onClick={handleLinkClick}>Resume</a>
           <a href="#fun" className="navbar-link" onClick={handleLinkClick}>Fun</a>
           <a href="#contact" className="navbar-link" onClick={handleLinkClick}>Contact</a>

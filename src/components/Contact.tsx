@@ -12,21 +12,28 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // Debug environment variables
+    console.log('EmailJS Config:', {
+      serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    });
+
     if (form.current) {
       emailjs.sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID || '',
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY || ''
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || ''
       )
       .then((result) => {
-        console.log(result.text);
+        console.log('Email sent successfully:', result.text);
         setSubmitStatus('success');
         if (form.current) {
           form.current.reset();
         }
       }, (error) => {
-        console.log(error.text);
+        console.error('Email sending failed:', error);
         setSubmitStatus('error');
       })
       .finally(() => {
