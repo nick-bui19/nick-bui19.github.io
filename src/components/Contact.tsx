@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
             <div className="contact-item">
               <span className="contact-label">LinkedIn:</span>
               <a 
-                href="https://linkedin.com/in/your-profile" 
+                href="https://linkedin.com/in/nick-bui19/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="contact-link"
