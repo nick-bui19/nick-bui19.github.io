@@ -19,7 +19,7 @@ const blogPosts: Record<string, BlogPostData> = {
     description: 'Ambitious automation, modern web security, and learning when to pivot',
     date: 'July 18, 2025',
     readTime: '5 min read',
-    heroImage: '/mcdonalds.png',
+    heroImage: '/mcdonalds_generated_banner.png',
     content: (
       <div className="blog-post-content">
         <h3>The Daily Panda Express Routine</h3>
@@ -107,7 +107,7 @@ const blogPosts: Record<string, BlogPostData> = {
     description: 'How I found the perfect balance between automation and control in calendar management',
     date: 'July 27, 2025',
     readTime: '6 min read',
-    heroImage: '/morgen.png',
+    heroImage: '/morgen.jpg',
     content: (
       <div className="blog-post-content">
         <p><em>Note: This isn't an ad, but if you want to try Morgen, here's my referral link: <a href="https://morgen.so/?ref=mor-w84p498" target="_blank" rel="noopener noreferrer">https://morgen.so/?ref=mor-w84p498</a></em></p>
@@ -234,6 +234,13 @@ const BlogPost: React.FC = () => {
             <span className="blog-post-read-time">{post.readTime}</span>
           </div>
         </header>
+
+        {/* Hero Image */}
+        {post.heroImage && (
+          <div className="blog-post-hero">
+            <img src={post.heroImage} alt={post.title} />
+          </div>
+        )}
 
         {/* Post Content */}
         <article className="blog-post-article">

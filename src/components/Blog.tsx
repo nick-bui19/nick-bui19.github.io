@@ -8,6 +8,7 @@ interface BlogPost {
   description: string;
   date: string;
   readTime: string;
+  previewImage: string;
 }
 
 const blogPosts: BlogPost[] = [
@@ -17,6 +18,7 @@ const blogPosts: BlogPost[] = [
     description: 'How I found the perfect balance between automation and control in calendar management',
     date: 'July 27, 2025',
     readTime: '6 min read',
+    previewImage: '/morgen.jpg',
   },
   {
     id: 'mcdonalds-survey-solver',
@@ -24,6 +26,7 @@ const blogPosts: BlogPost[] = [
     description: 'Ambitious automation, modern web security, and learning when to pivot',
     date: 'July 18, 2025',
     readTime: '5 min read',
+    previewImage: '/mcdonalds_generated_banner.png',
   }
 ];
 
@@ -34,6 +37,9 @@ const Blog: React.FC = () => {
       <div className="blog-grid">
         {blogPosts.map((post) => (
           <div className="blog-card" key={post.id}>
+            <div className="blog-card-image">
+              <img src={post.previewImage} alt={post.title} />
+            </div>
             <div className="blog-card-content">
               <div className="blog-card-meta">
                 <span className="blog-card-date">{post.date}</span>
