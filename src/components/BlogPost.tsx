@@ -15,7 +15,7 @@ interface BlogPostData {
 const blogPosts: Record<string, BlogPostData> = {
   'mcdonalds-survey-solver': {
     id: 'mcdonalds-survey-solver',
-    title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed :||)',
+    title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed 😐)',
     description: 'Ambitious automation, modern web security, and learning when to pivot',
     date: 'July 18, 2025',
     readTime: '5 min read',
@@ -98,6 +98,100 @@ const blogPosts: Record<string, BlogPostData> = {
         <p><strong>Source code:</strong> <a href="https://github.com/nick-bui19/mcdonalds-survey-solver" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
         
         <p><strong>P.S.</strong> – If you work at McDonald's security and are reading this: excellent work. Please don't sue me, I just wanted free breakfast.</p>
+      </div>
+    )
+  },
+  'morgen-calendar-app': {
+    id: 'morgen-calendar-app',
+    title: 'How I went from Calendar Chaos to Calendar Clarity',
+    description: 'How I found the perfect balance between automation and control in calendar management',
+    date: 'July 27, 2025',
+    readTime: '6 min read',
+    heroImage: '/morgen.png',
+    content: (
+      <div className="blog-post-content">
+        <p><em>Note: This isn't an ad, but if you want to try Morgen, here's my referral link: <a href="https://morgen.so/?ref=mor-w84p498" target="_blank" rel="noopener noreferrer">https://morgen.so/?ref=mor-w84p498</a></em></p>
+        
+        <p>It all started with a conversation with my girlfriend. She thinks Google Calendar is enough. And honestly? For most people, maybe it is. But here's the thing – I never thought a calendar actually helped me that much.</p>
+        
+        <p>I wanted my calendar to be a source of truth. You know, you look at your calendar and you know exactly what you're doing. But that's not really possible with Google Calendar because you can plan your day as much as you want, but things don't always go to plan.</p>
+        
+        <h3>The Morning Scramble Problem</h3>
+        <p>What happens if you wake up at 8 instead of 7? You miss an hour. Now what? Now you have to reschedule all the things that you had planned before, right? And I like to pack my schedule too, so everything would get moved back one hour.</p>
+        
+        <p>But then the problem is some things can't be moved. For example, my class or a meeting that has been pre-scheduled at that time. What happens then?</p>
+        
+        <h3>My Journey Through Calendar AI Tools</h3>
+        <p>This frustration led me to explore calendar AI tools. Out of all of them, Motion AI, Clockwise, and Reclaim (I think it was called Reclaim?) stood out the most. I even input my card info to try Motion AI and Clockwise. But for me, it was just too much.</p>
+        
+        <p>The biggest issue? They always schedule things instead of me scheduling it, which wasn't great. I wanted control with intelligence, not a robot running my life.</p>
+        
+        <h3>Rediscovering Morgen</h3>
+        <p>Then I tested out Morgen again. I don't know why I stopped using Morgen, but I think it was because I only used it before because it was a recommendation from my friend. I knew it was slightly more powerful than Google Calendar, but realistically I only used it because it had better UI than my Google Calendar with pastel colors.</p>
+        
+        <p>But Morgen now? It's a completely different beast.</p>
+        
+        <h3>The Game-Changing Features</h3>
+        
+        <h4>1. Calendar Shortcuts That Feel Like Magic</h4>
+        <p>I have five different calendars on my personal account: personal/social, classes, projects, interview prep, and manual. Plus my work calendar. That's so many calendars to sync, and sometimes it gets very overwhelming.</p>
+        
+        <p>But with Morgen:</p>
+        <ul>
+          <li>Press 8: See all my personal/social events for the week</li>
+          <li>Press 1: See all my classes</li>
+          <li>Press 2: See all my projects</li>
+          <li>Press 3: See all my interview prep</li>
+          <li>Press 9: See classes, projects, AND interview prep all at once</li>
+        </ul>
+        
+        <p>It felt like a Porsche compared to a Toyota of Google Calendar. So many shortcuts.</p>
+        
+        <h4>2. Smart Frames & Energy Management</h4>
+        <p>This solved my key issue. In my deep focus time slots, I was doing admin work where I shouldn't be doing admin work. Then when my energy is low, I'd try to do deep work and it just doesn't work because my energy is not good and I can't focus.</p>
+        
+        <p>With Morgen's Smart Frames:</p>
+        <ul>
+          <li>Morning "Deep Work" blocks (9-11 AM) only get complex tasks</li>
+          <li>Afternoon "Admin" blocks (2-3 PM) only get low-energy tasks</li>
+          <li>The AI respects these boundaries and schedules accordingly</li>
+        </ul>
+        
+        <h4>3. Calendar Propagation</h4>
+        <p>Since I manage everything from my personal calendar, I need my work meetings to show up there too. Calendar propagation lets me:</p>
+        <ul>
+          <li>Sync work meetings to my personal calendar as "Private Event (from Morgen)"</li>
+          <li>Keep personal events synced to work calendar for availability</li>
+          <li>Avoid double-booking across all my calendars</li>
+        </ul>
+        
+        <h4>4. The Task List Integration</h4>
+        <p>When you delete a task off your schedule, it goes back into the task list. You can drag tasks from your task list onto your calendar. It's intuitive and actually works the way your brain works.</p>
+        
+        <h3>The Perfect Balance</h3>
+        <p>Morgen was just the right amount. Not too automated like Motion AI, not too manual like Google Calendar. It offers AI planners and task lists that are really useful and intuitive without taking away your control.</p>
+        
+        <h3>The Reality Check</h3>
+        <p>Morgen is still a work in progress. I've had to ask in forums how to do certain things. The AI doesn't automatically adjust when your meeting ends 30 minutes early – you still need to manually trigger replanning.</p>
+        
+        <p>But that's actually fine by me. I want assistance, not automation.</p>
+        
+        <h3>Is It Worth It?</h3>
+        <p>If you're like me and you:</p>
+        <ul>
+          <li>Juggle multiple calendars</li>
+          <li>Struggle with energy management</li>
+          <li>Want smart assistance without losing control</li>
+          <li>Need better task-to-calendar integration</li>
+        </ul>
+        
+        <p>Then yes, Morgen is worth the upgrade from Google Calendar.</p>
+        
+        <p>If you're happy with Google Calendar and don't have these specific pain points? Stick with what works.</p>
+        
+        <p>For me, Morgen turned my calendar from a wishful thinking document into an actual source of truth. And that's worth way more than $15 a month.</p>
+        
+        <p><em>Again, not an ad – but if you're curious, my referral link is: <a href="https://morgen.so/?ref=mor-w84p498" target="_blank" rel="noopener noreferrer">https://morgen.so/?ref=mor-w84p498</a></em></p>
       </div>
     )
   }

@@ -12,8 +12,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'morgen-calendar-app',
+    title: 'How I went from Calendar Chaos to Calendar Clarity',
+    description: 'How I found the perfect balance between automation and control in calendar management',
+    date: 'July 27, 2025',
+    readTime: '6 min read',
+  },
+  {
     id: 'mcdonalds-survey-solver',
-    title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed :||)',
+    title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed 😐)',
     description: 'Ambitious automation, modern web security, and learning when to pivot',
     date: 'July 18, 2025',
     readTime: '5 min read',
