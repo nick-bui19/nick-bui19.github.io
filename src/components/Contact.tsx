@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
               name="from_name"
               required
               className="form-input"
-              placeholder="Your full name"
+              placeholder="Your name"
             />
           </div>
 
@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
               name="from_email"
               required
               className="form-input"
-              placeholder="your.email@example.com"
+              placeholder="email@example.com"
             />
           </div>
 
@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
               required
               rows={5}
               className="form-textarea"
-              placeholder="Tell me about your project, question, or just say hello!"
+              placeholder=""
             />
           </div>
 
