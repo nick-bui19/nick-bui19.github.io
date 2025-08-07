@@ -68,8 +68,8 @@ const Fun: React.FC = () => {
         <p>
           Other than squash, I also enjoy playing tennis, long-distance running 
           (<a href="https://strava.app.link/XgzF52zrlUb" target="_blank" rel="noopener noreferrer">follow my Strava!!!</a>), 
-          being outdoors, hiking, and an occasional game of chess
-          (<a href="https://www.chess.com/member/nickbui1908/stats" target="_blank" rel="noopener noreferrer">my Chess.com</a>).
+          being outdoors, hiking, and chess!
+          (<a href="https://www.chess.com/member/nickbui1908/stats/rapid?days=30" target="_blank" rel="noopener noreferrer">my Chess.com</a>).
         </p>
         <p>
           I also love taking pictures on my film camera. Check out my film photography below!
