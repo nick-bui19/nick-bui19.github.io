@@ -22,10 +22,10 @@ const resumeData = {
       date: 'June 2025 - August 2025',
       location: 'Los Angeles, CA',
       duties: [
-        'Automated cross-platform CI with Docker & GitLab-CI, shrinking Windows/Linux/macOS regressions from 5h to 20min, enabling one-click builds.',
-        'Built a Rust smart-updater that fetches semver patches and verifies checksums, cutting upgrade-failure tickets by 40%.',
-        'Designed a React + Redux fleet dashboard that orchestrates multiple company’s data acquisition boards over WebSockets, saving operators 3 h/week.',
-        'Instrumented end-to-end Playwright tests achieving 80% coverage and catching 17 critical bugs pre-release.'
+        'Developed cross-platform desktop application using Rust/Tauri for spacecraft data acquisition system serving 50+ engineers in production space missions, implementing native macOS bundling pipeline with Node-RED, InfluxDB, and Telegraf integration.',
+        'Optimized CI/CD infrastructure reducing build times from 5 hours to 20 minutes through automated GitLab pipelines.',
+        'Built TransAstra’s data acquisition product web app end-to-end (Next.js/TypeScript, Supabase, AWS Amplify) with auth, cart/checkout, and CRM integration (HubSpot); shipped to production in 6 weeks.',
+        'Engineered production platform for web app: AWS SES-backed transactional email, CloudWatch monitoring/alerts, zero-downtime CI/CD; achieved 99.9% uptime & 25% cost reduction through CDN/asset optimization.'
       ]
     },
     {
@@ -45,9 +45,8 @@ const resumeData = {
       date: 'May 2023 - August 2023',
       location: 'Nashville, TN',
       duties: [
-        'Built TensorFlow ensemble learning models to assess patient mental states from intake responses & behavioral signals.',
+        'Built TensorFlow ensemble learning models to assess patient mental states from intake responses & behavioral signals with 96 % accuracy.',
         'Prototype full-stack mobile application that provides psychiatrists at Vanderbilt University Medical Center with real-time patient feedback, containerized with Docker Compose.',
-        'Designed and implemented a secure sign-up page and email verification with AWS Amplify.'
       ]
     },
     {
@@ -71,7 +70,7 @@ const resumeData = {
     {
       name: 'AWS Certified Cloud Practitioner',
       issuer: 'Amazon Web Services (AWS)',
-      date: 'Issued Jul 2025',
+      date: 'Issued Aug 2025',
       credentialId: ''
     },
     {
