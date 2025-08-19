@@ -71,7 +71,7 @@ const resumeData = {
       name: 'AWS Certified Cloud Practitioner',
       issuer: 'Amazon Web Services (AWS)',
       date: 'Issued Aug 2025',
-      credentialId: ''
+      credentialId: '513959295'
     },
     {
       name: 'Machine Learning Specialization',
