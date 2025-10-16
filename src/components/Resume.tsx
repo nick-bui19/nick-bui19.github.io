@@ -19,11 +19,11 @@ const resumeData = {
     {
       company: 'TransAstra',
       role: 'Software Engineer Intern',
-      date: 'June 2025 - August 2025',
+      date: 'June 2025 - now',
       location: 'Los Angeles, CA',
       duties: [
         'Developed cross-platform desktop application using Rust/Tauri for spacecraft data acquisition system serving 50+ engineers in production space missions, implementing native macOS bundling pipeline with Node-RED, InfluxDB, and Telegraf integration.',
-        'Optimized CI/CD infrastructure reducing build times from 5 hours to 20 minutes through automated GitLab pipelines.',
+        'Optimized CI/CD infrastructure reducing build times from 1 hour to 20 minutes through automated GitLab pipelines.',
         'Built TransAstra’s data acquisition product web app end-to-end (Next.js/TypeScript, Supabase, AWS Amplify) with auth, cart/checkout, and CRM integration (HubSpot); shipped to production in 6 weeks.',
         'Engineered production platform for web app: AWS SES-backed transactional email, CloudWatch monitoring/alerts, zero-downtime CI/CD; achieved 99.9% uptime & 25% cost reduction through CDN/asset optimization.'
       ]
