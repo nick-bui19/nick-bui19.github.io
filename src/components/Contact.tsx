@@ -59,8 +59,8 @@ const Contact: React.FC = () => {
           <div className="contact-details">
             <div className="contact-item">
               <span className="contact-label">Email:</span>
-              <a href="mailto:nick.bui@vanderbilt.edu" className="contact-link">
-                nick.bui@vanderbilt.edu
+              <a href="mailto:nicholas.bui.8@gmail.com" className="contact-link">
+                nicholas.bui.8@gmail.com
               </a>
             </div>
             <div className="contact-item">
