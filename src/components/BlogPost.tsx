@@ -114,6 +114,18 @@ const blogPosts: Record<string, BlogPostData> = {
         <h3 id="result">The Result</h3>
         <p>We shipped a working multiplayer VR game where players can join a server, grab weapons, fight off waves of animated Martian enemies, and revive fallen teammates, all in low gravity Martian chaos. It's rough around the edges, but it works, and it's incredibly fun to play with friends in VR.</p>
 
+        <p><strong>Here's my friend Marcus playing the game:</strong></p>
+        <div style={{margin: '1.5rem 0'}}>
+          <video
+            controls
+            style={{width: '100%', maxWidth: '700px', borderRadius: '8px'}}
+            preload="metadata"
+          >
+            <source src="/sole-survivor-gameplay.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <div style={{display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap'}}>
           <a href="https://drive.google.com/file/d/1ZZVuW3vIpN-OR0hqt0DkQGYkPG_SUomj/view?usp=sharing" className="project-card-button" target="_blank" rel="noopener noreferrer">
             Download APK &rarr;
@@ -130,7 +142,7 @@ const blogPosts: Record<string, BlogPostData> = {
 
         <p><em>btw: here's me and my pitch poster!</em></p>
         <div style={{margin: '1rem 0'}}>
-          <img src="/sole_survivor_pitch.png" alt="Nick at Sole Survivor final pitch" style={{width: '100%', maxWidth: '400px', borderRadius: '8px'}} />
+          <img src="/sole_survivor_pitch.png" alt="Nick at Sole Survivor final pitch" style={{width: '100%', maxWidth: '700px', borderRadius: '8px'}} />
         </div>
       </div>
     )
