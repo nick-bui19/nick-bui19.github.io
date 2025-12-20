@@ -13,6 +13,14 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 'sole-survivor',
+    title: 'Building Sole Survivor: A Multiplayer VR Wave Defense Game',
+    description: 'From VR physics nightmares to networked alien invasions: how we built a virtual reality cooperative Mars survival game in one semester',
+    date: 'December 10, 2025',
+    readTime: '10 min read',
+    previewImage: '/sole-survivor-logo.png',
+  },
+  {
     id: 'morgen-calendar-app',
     title: 'How I went from Calendar Chaos to Calendar Clarity',
     description: 'How I found the perfect balance between automation and control in calendar management',

@@ -13,6 +13,128 @@ interface BlogPostData {
 }
 
 const blogPosts: Record<string, BlogPostData> = {
+  'sole-survivor': {
+    id: 'sole-survivor',
+    title: 'Building Sole Survivor: A Multiplayer VR Wave Defense Game',
+    description: 'From VR physics nightmares to networked alien invasions: how we built a virtual reality cooperative Mars survival game in one semester',
+    date: 'December 10, 2025',
+    readTime: '10 min read',
+    heroImage: '/sole-survivor-logo.png',
+    content: (
+      <div className="blog-post-content">
+        <h3>The Concept</h3>
+        <p>For our Vanderbilt VR class, we set out to build Sole Survivor, a multiplayer wave defense game where players fight off Martian alien invaders in virtual reality. The premise was simple: survive increasingly difficult waves of enemies with your teammates on the surface of Mars. The execution? Much more complex.</p>
+
+        <h3>The Team</h3>
+        <p>A small team of three, Maddox, Landon, and I took on this ambitious project head on. Maddox was our Agile Board Director and led backend game logic, XR movement, and physics development. Landon managed our GitHub repository and focused on model animation and environment design. And I was the networking lead, handling backend game logic and multiplayer integration.</p>
+
+        <p><strong>Team Breakdown:</strong></p>
+        <ul>
+          <li><strong>Maddox:</strong> Agile Board Director, Backend Game Logic, XR Movement & Interactions, Physics Development</li>
+          <li><strong>Landon:</strong> GitHub Manager, Model Animation, Environment Development</li>
+          <li><strong>Nick (me):</strong> Networking Lead, Backend Game Logic</li>
+        </ul>
+
+        <h3>The Build: 5 Sprints</h3>
+
+        <h4>Sprint 1: Getting the Basics Right</h4>
+        <p>We started with the fundamentals: getting VR interactions working, setting up player movement with the XR Camera Rig, and creating a basic Mars environment. Early on, we discovered that grabbable objects would slam into the player and send them flying backwards, so our solution was creating separate collision layers for the player, scene, and grabbable objects.</p>
+
+        <p><strong>Key features:</strong></p>
+        <ul>
+          <li>VR locomotion via thumbstick</li>
+          <li>Basic object grabbing</li>
+          <li>Initial Mars terrain (seeing the terrain built was so cool)</li>
+          <li>Enemy AI pathfinding (with some... quirks)</li>
+        </ul>
+
+        <h4>Sprint 2: Movement & Combat</h4>
+        <p>This sprint brought sprint mechanics (left thumbstick) and a jetpack (right thumbstick) to life. We expanded the playable map with mountain barriers, added our first weapon (a pistol), and refined enemy AI navigation. One major breakthrough was fixing enemies that were "floating" across terrain, so we re-baked the NavMesh with physics-based geometry settings.</p>
+
+        <p><strong>Key features:</strong></p>
+        <ul>
+          <li>Sprint and jetpack movement</li>
+          <li>Expanded Mars map with boundaries</li>
+          <li>First functional weapon with shooting mechanics</li>
+          <li>Enemy attack and death animations</li>
+        </ul>
+
+        <h4>Sprint 3: Physics Overhaul</h4>
+        <p>We hit a massive wall with physics. Held objects lagged behind the player's hands, creating a terrible user experience. After trying multiple fixes (Unity event triggers, gravity toggles), we eventually had to rebuild the entire player prefab from scratch with base physics settings. This sprint taught us a lot about Unity's interaction systems.</p>
+
+        <p>We also implemented the wave system with 5 waves with increasing enemy counts, each starting with a UI splash screen. Players could now take damage, see their health via a red vignette effect, and enter a "revive" state when defeated.</p>
+
+        <p><strong>Key features:</strong></p>
+        <ul>
+          <li>Fixed object lag (finally!)</li>
+          <li>Wave-based gameplay with enemy spawner</li>
+          <li>Player health and damage system</li>
+          <li>Environment fog and asteroid impacts</li>
+        </ul>
+
+        <h4>Sprint 4: Visual Polish</h4>
+        <p>We overhauled the environment to make Mars feel more atmospheric, with sand dunes, adjusted reddish lighting, and colored fog (because Mars). We also expanded the weapon arsenal with AR, MP5, Shotgun, and Rocket Launcher models, each with firing and bullet-spawning logic.</p>
+
+        <p><strong>Key features:</strong></p>
+        <ul>
+          <li>Realistic Mars terrain with valleys and dunes</li>
+          <li>New Martian enemy model with animations</li>
+          <li>Multiple weapons with hand poses</li>
+          <li>Improved lighting and atmosphere</li>
+        </ul>
+
+        <h4>Sprint 5: Multiplayer Networking Pain</h4>
+        <p>We implemented full multiplayer networking using Photon PUN2, synchronizing players, enemies, guns, UI screens (this took way too long to get working). We added three Martian enemy variants that spawn randomly, networked their animations using Mecanim, and built a revival system where dead players can be brought back if teammates survive the wave.</p>
+        <p><strong>Key features:</strong></p>
+        <ul>
+          <li>Full multiplayer networking (players, enemies, weapons, UI)</li>
+          <li>Host authority for wave spawning</li>
+          <li>Player revival system</li>
+          <li>3 networked Martian enemy variants</li>
+          <li>Motion sickness mitigation</li>
+        </ul>
+
+        <h3>Technical Challenges We Solved</h3>
+        <ol>
+          <li><strong>Physics Collisions:</strong> Grabbable objects pushing players required custom collision layer matrices</li>
+          <li><strong>Object Lag:</strong> Completely rebuilt player prefab to fix held object physics</li>
+          <li><strong>Enemy Navigation:</strong> NavMesh baking with physics geometry for proper terrain following</li>
+          <li><strong>Multiplayer Sync:</strong> Host authority for enemy spawning, Mecanim animation sync across clients</li>
+        </ol>
+
+        <h3>What We Learned</h3>
+        <ul>
+          <li><strong>Unity's VR Interaction System is very finicky.</strong> Small prefab conflicts cause huge physics issues.</li>
+          <li><strong>Networking is a pain in the ass.</strong> Syncing animations, enemy AI, and player state across multiple clients took careful architecture planning.</li>
+          <li><strong>Good project management matters.</strong> Maddox's Agile board kept us organized through five sprints, and cramming a finicky VR project would never work.</li>
+          <li><strong>We do NOT like doing game dev.</strong></li>
+
+        </ul>
+
+        <h3 id="result">The Result</h3>
+        <p>We shipped a working multiplayer VR game where players can join a server, grab weapons, fight off waves of animated Martian enemies, and revive fallen teammates, all in low gravity Martian chaos. It's rough around the edges, but it works, and it's incredibly fun to play with friends in VR.</p>
+
+        <div style={{display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap'}}>
+          <a href="https://drive.google.com/file/d/1ZZVuW3vIpN-OR0hqt0DkQGYkPG_SUomj/view?usp=sharing" className="project-card-button" target="_blank" rel="noopener noreferrer">
+            Download APK &rarr;
+          </a>
+          <a href="https://drive.google.com/file/d/1C5VMST-DzOE-KSnC3cnT4fTKcDQY9-pS/view?usp=sharing" className="project-card-button" target="_blank" rel="noopener noreferrer">
+            Watch the Pitch &rarr;
+          </a>
+        </div>
+
+        <h3>Final Thoughts</h3>
+        <p>This project was a crash course in VR development, Unity networking, and collaborative game design. I'm proud of what we built together, and I learned more in one semester than I could have imagined.</p>
+
+        <p>Now if you'll excuse me, I need to go survive another wave!!! (you should too, if you have a Meta Quest headset)</p>
+
+        <p><em>btw: here's me and my pitch poster!</em></p>
+        <div style={{margin: '1rem 0'}}>
+          <img src="/sole_survivor_pitch.png" alt="Nick at Sole Survivor final pitch" style={{width: '100%', maxWidth: '400px', borderRadius: '8px'}} />
+        </div>
+      </div>
+    )
+  },
   'mcdonalds-survey-solver': {
     id: 'mcdonalds-survey-solver',
     title: 'I Tried to Automate McDonald\'s Surveys (And It Spectacularly Failed 😐)',
