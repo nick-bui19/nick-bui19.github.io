@@ -11,6 +11,12 @@ const projects = [
     link: '/blog/sole-survivor#result',
   },
   {
+    image: '/math-games.png',
+    title: 'Math Games',
+    description: 'I took a problem solving math class where games were my favorite topic. I wanted to create math games that introduce strategic thinking and problem solving. See if you can solve them!',
+    link: 'https://nick-bui19.github.io/math-games/',
+  },
+  {
     image: '/traffic-data-project.png',
     title: 'Real-Time Sensor Analytics',
     description: 'A real-time traffic and environmental sensor analytics platform using Kafka, PySpark, and Streamlit.',
