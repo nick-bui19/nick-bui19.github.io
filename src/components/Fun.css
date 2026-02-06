@@ -68,7 +68,7 @@
 .squash-gallery {
   display: flex;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto 40px;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .gallery-image {
-  height: 200px;
+  height: 250px;
   margin-right: 16px;
   border-radius: 12px;
   transition: transform 0.3s ease;

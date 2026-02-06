@@ -12,6 +12,11 @@ const filmImagesRow1 = [
     { src: '/film-7-horizontal.png', alt: 'Film photograph 7' },
     { src: '/film-1-vertical.png', alt: 'Film photograph 1' },
     { src: '/film-5-vertical.png', alt: 'Film photograph 5' },
+    { src: '/film-18-horizontal.png', alt: 'Film photograph 18' },
+    { src: '/film-19-horizontal.png', alt: 'Film photograph 19' },
+    { src: '/film-20-horizontal.png', alt: 'Film photograph 20' },
+    { src: '/film-21-horizontal.png', alt: 'Film photograph 21' },
+    { src: '/film-22-horizontal.png', alt: 'Film photograph 22' },
 ];
 
 const filmImagesRow2 = [
@@ -21,6 +26,11 @@ const filmImagesRow2 = [
     { src: '/film-15-vertical.png', alt: 'Film photograph 15' },
     { src: '/film-16-horizontal.png', alt: 'Film photograph 16' },
     { src: '/film-17-horizontal.png', alt: 'Film photograph 17' },
+    { src: '/film-23-horizontal.png', alt: 'Film photograph 23' },
+    { src: '/film-24-horizontal.png', alt: 'Film photograph 24' },
+    { src: '/film-25-horizontal.png', alt: 'Film photograph 25' },
+    { src: '/film-26-horizontal.png', alt: 'Film photograph 26' },
+    { src: '/film-27-vertical.png', alt: 'Film photograph 27' },
 ];
 
 // Preload images function
@@ -52,7 +62,7 @@ const Fun: React.FC = () => {
       
       <div className="fun-description">
         <p>
-          My main gig is squash. I play for the Vanderbilt Club Squash team, where I've served as the vice-president and captain for my junior year and will serve the same roles for my senior year.
+          My main gig is squash. I play for the Vanderbilt Club Squash team, where I've served as the vice-president and captain for 3 years.
         </p>
       </div>
 
