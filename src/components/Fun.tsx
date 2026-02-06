@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Fun.css';
 
+const flyingImages = [
+  { src: '/flying.png', alt: 'Nick flying' },
+];
+
 const squashImages = [
   { src: '/squash.png', alt: 'Nick playing squash' },
 ];
@@ -46,7 +50,7 @@ const Fun: React.FC = () => {
 
   useEffect(() => {
     // Preload all images when component mounts
-    const allImages = [...squashImages, ...filmImagesRow1, ...filmImagesRow2];
+    const allImages = [...flyingImages, ...squashImages, ...filmImagesRow1, ...filmImagesRow2];
     preloadImages(allImages);
     
     // Set a timeout to show images after preloading
@@ -59,26 +63,32 @@ const Fun: React.FC = () => {
   return (
     <section className="fun-container" id="fun">
       <h2 className="fun-title">Fun Stuff</h2>
-      
+
       <div className="fun-description">
         <p>
-          My main gig is squash. I play for the Vanderbilt Club Squash team, where I've served as the vice-president and captain for 3 years.
+          I'm currently a student pilot working toward my private pilot certificate. Aviation has become one of my greatest passions, as I love the freedom of flight and the precision it requires. I just love planes and everything aerospace-related! I also play for the Vanderbilt Club Squash team, where I've served as vice-president and captain for 3 years.
         </p>
       </div>
 
-      <div className="squash-gallery">
-        {squashImages.map((image, index) => (
-          <div className="squash-image-wrapper" key={index}>
-            <img src={image.src} alt={image.alt} className="fun-image" />
-          </div>
-        ))}
+      <div className="two-column-gallery">
+        <div className="column-image-wrapper">
+          {flyingImages.map((image, index) => (
+            <img src={image.src} alt={image.alt} className="fun-image" key={index} />
+          ))}
+        </div>
+
+        <div className="column-image-wrapper">
+          {squashImages.map((image, index) => (
+            <img src={image.src} alt={image.alt} className="fun-image" key={index} />
+          ))}
+        </div>
       </div>
 
       <div className="fun-description">
         <p>
-          Other than squash, I also enjoy playing tennis, long-distance running 
-          (<a href="https://strava.app.link/XgzF52zrlUb" target="_blank" rel="noopener noreferrer">follow my Strava!!!</a>), 
-          being outdoors, hiking, and chess!
+          Beyond flying and squash, I enjoy playing tennis, long-distance running
+          (<a href="https://strava.app.link/XgzF52zrlUb" target="_blank" rel="noopener noreferrer">follow my Strava!!!</a>),
+          being outdoors, hiking, working on cars, and chess
           (<a href="https://www.chess.com/member/nickbui1908/stats/rapid?days=30" target="_blank" rel="noopener noreferrer">my Chess.com</a>).
         </p>
         <p>
