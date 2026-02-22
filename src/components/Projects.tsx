@@ -12,9 +12,9 @@ const projects = [
   },
   {
     image: '/math-games.png',
-    title: 'Math Games',
-    description: 'I took a problem solving math class where games were my favorite topic. I wanted to create math games that introduce strategic thinking and problem solving. See if you can solve them!',
-    link: 'https://nick-bui19.github.io/math-games/',
+    title: 'Optimal 7 Game',
+    description: 'As a math major, math games are my favorite topic. I love creating math games that introduce game theory & problem solving. See if you can solve them!',
+    link: 'https://nick-bui19.github.io/optimal-7-game/',
   },
   {
     image: '/traffic-data-project.png',
