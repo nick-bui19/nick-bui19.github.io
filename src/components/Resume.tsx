@@ -7,7 +7,6 @@ const resumeData = {
       university: 'Vanderbilt University',
       location: 'Nashville, TN',
       degree: 'B.Sc. in Computer Science & Mathematics, Minor in Engineering Management',
-      date: 'May 2026',
       courses: [
         'Operating Systems', 'Artificial Intelligence', 'Software Design', 'Programming Languages',
         'Machine Learning', 'Algorithms', 'Data Structures', 'Discrete Structures', 'Digital Systems', 'Statistics'
@@ -17,9 +16,19 @@ const resumeData = {
   ],
   experience: [
     {
+      company: 'Future Standard',
+      role: 'Engineering Analyst',
+      location: 'Philadelphia, PA',
+      duties: [
+        'Developed cross-platform desktop application using Rust/Tauri for spacecraft data acquisition system serving 50+ engineers in production space missions, implementing native macOS bundling pipeline with Node-RED, InfluxDB, and Telegraf integration.',
+        'Optimized CI/CD infrastructure reducing build times from 1 hour to 20 minutes through automated GitLab pipelines.',
+        'Built TransAstra’s data acquisition product web app end-to-end (Next.js/TypeScript, Supabase, AWS Amplify) with auth, cart/checkout, and CRM integration (HubSpot); shipped to production in 6 weeks.',
+        'Engineered production platform for web app: AWS SES-backed transactional email, CloudWatch monitoring/alerts, zero-downtime CI/CD; achieved 99.9% uptime & 25% cost reduction through CDN/asset optimization.'
+      ]
+    },
+    {
       company: 'TransAstra',
       role: 'Software Engineer Intern',
-      date: 'June 2025 - now',
       location: 'Los Angeles, CA',
       duties: [
         'Developed cross-platform desktop application using Rust/Tauri for spacecraft data acquisition system serving 50+ engineers in production space missions, implementing native macOS bundling pipeline with Node-RED, InfluxDB, and Telegraf integration.',
@@ -31,7 +40,6 @@ const resumeData = {
     {
       company: 'Karpool',
       role: 'Software Engineer Intern',
-      date: 'May 2024 - August 2024',
       location: 'Cape Town, South Africa',
       duties: [
         'Engineered driver–rider matching & real-time ride-tracking in React Native & Node.js, cutting avg booking time by 35s.',
@@ -42,7 +50,6 @@ const resumeData = {
     {
       company: 'Vanderbilt Medical Center - Jump-Start Tech',
       role: 'Machine Learning Intern',
-      date: 'May 2023 - August 2023',
       location: 'Nashville, TN',
       duties: [
         'Built TensorFlow ensemble learning models to assess patient mental states from intake responses & behavioral signals with 96 % accuracy.',
@@ -52,7 +59,6 @@ const resumeData = {
     {
         company: 'Yu Huang Lab, Vanderbilt University',
         role: 'Research Assistant',
-        date: 'January 2023 - May 2024',
         location: 'Nashville, TN',
         duties: [
           'Developed ensemble learning email malware detection algorithm with 95 % detection rate in preliminary testing.',
@@ -63,38 +69,28 @@ const resumeData = {
   ],
   certifications: [
     {
-      name: 'AWS Solutions Architect - Associate',
-      issuer: 'Amazon Web Services (AWS)',
-      date: 'In Progress'
-    },
-    {
       name: 'AWS Certified Cloud Practitioner',
       issuer: 'Amazon Web Services (AWS)',
-      date: 'Issued Aug 2025',
       credentialId: '513959295'
     },
     {
       name: 'Machine Learning Specialization',
       issuer: 'Stanford | Coursera',
-      date: 'Issued Jun 2023',
       credentialId: 'D8YHKEYMQNX4'
     },
     {
       name: 'Unsupervised Learning, Recommenders, Reinforcement Learning',
       issuer: 'Stanford | Coursera',
-      date: 'Issued Jun 2023',
       credentialId: '4C2F9DQ6P5EQ'
     },
     {
         name: 'Advanced Learning Algorithms',
         issuer: 'Stanford | Coursera',
-        date: 'Issued May 2023',
         credentialId: 'LVEH4JFDN3R'
     },
     {
         name: 'Supervised Machine Learning: Regression and Classification',
         issuer: 'Stanford | Coursera',
-        date: 'Issued May 2023',
         credentialId: 'BVDXAHJUY7EN'
     }
   ]
