@@ -106,7 +106,6 @@ const Resume: React.FC = () => {
             <div key={index} className="resume-item">
               <div className="resume-item-header">
                 <h3>{edu.university}</h3>
-                <span>{edu.date}</span>
               </div>
               <p className="degree">{edu.degree}</p>
               <p><strong>Relevant Courses:</strong> {edu.courses.join(', ')}</p>
@@ -121,7 +120,6 @@ const Resume: React.FC = () => {
                 <div key={index} className="resume-item">
                     <div className="resume-item-header">
                         <h3>{cert.name}</h3>
-                        <span>{cert.date}</span>
                     </div>
                     <p className="issuer">{cert.issuer}</p>
                     {cert.credentialId && <p className="credential-id">Credential ID: {cert.credentialId}</p>}
@@ -135,7 +133,6 @@ const Resume: React.FC = () => {
             <div key={index} className="resume-item">
               <div className="resume-item-header">
                 <h3>{exp.role} @ {exp.company}</h3>
-                <span>{exp.date}</span>
               </div>
               <ul>
                 {exp.duties.map((duty, i) => (
